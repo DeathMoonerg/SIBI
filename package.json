@@ -3,8 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build && mkdir -p public/build",
-        "postbuild": "cp -r public/build/* public/"
+        "build": "vite build && cp -r dist/* public/",
+        "postbuild": "mkdir -p public/build && cp -r dist/assets/* public/build/"
     },
     "devDependencies": {
         "axios": "^1.6.4",
