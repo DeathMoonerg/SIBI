@@ -3,7 +3,12 @@
     "framework": null,
     "functions": {
         "api/index.php": { 
-            "runtime": "vercel-php@0.7.3"
+            "runtime": "vercel-php@0.7.3",
+            "includeFiles": "**/*.php",
+            "php": {
+                "version": "8.2",
+                "extensions": ["curl", "pgsql", "pdo_pgsql"]
+            }
         }
     },
     "routes": [
