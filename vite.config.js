@@ -8,9 +8,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    build: {
-        outDir: 'dist',
-        assetsDir: 'assets',
-        emptyOutDir: true,
-    },
 });
