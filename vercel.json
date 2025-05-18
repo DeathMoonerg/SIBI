@@ -2,7 +2,10 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { 
+            "runtime": "vercel-php@0.6.0",
+            "buildCommand": "apt-get update && apt-get install -y libssl1.0.0 && composer install"
+        }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
