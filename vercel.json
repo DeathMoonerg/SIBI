@@ -9,7 +9,7 @@
             { "src": "/(.*)", "dest": "/api/index.php" }
         ],
         "public": true,
-        "buildCommand": "curl -sS https://getcomposer.org/installer | php && php composer.phar install && vite build",
+        "buildCommand": "vite build",
         "outputDirectory": "public",
         "env": {
             "APP_ENV": "production",
