@@ -9,8 +9,8 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: 'public',
-        assetsDir: 'build/assets',
-        emptyOutDir: false,
+        outDir: 'dist',
+        assetsDir: 'assets',
+        emptyOutDir: true,
     },
 });
