@@ -1,0 +1,113 @@
+/* Custom dropdown positioning */
+.navbar-nav .dropdown-menu {
+    margin-top: 15px;
+}
+
+.navbar .nav-item.dropdown {
+    margin-top: 15px;
+}
+
+/* Navbar styling reverted to original */
+/* Original navbar is already sticky in the main CSS */
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure profile image is properly aligned */
+.img-profile {
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Adjust notification badge positioning */
+.badge-counter {
+    position: absolute;
+    transform: scale(0.7);
+    transform-origin: top right;
+    right: 0.25rem;
+    margin-top: -0.25rem;
+}
+
+/* Add these to ensure dropdowns show properly */
+.dropdown-list {
+    z-index: 1000;
+}
+
+.topbar .dropdown {
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .dropdown-menu {
+        margin-top: 10px;
+    }
+}
+
+/* Modern Pagination Styles */
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.custom-pagination .pagination {
+    display: inline-flex;
+    border-radius: 30px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 3px;
+    margin-bottom: 0;
+}
+
+.custom-pagination .page-item {
+    margin: 0 2px;
+}
+
+.custom-pagination .page-item .page-link {
+    border-radius: 20px;
+    border: none;
+    min-width: 90px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #6c757d;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.custom-pagination .page-item .page-link:hover {
+    background-color: #e9ecef;
+    color: #4e73df;
+}
+
+.custom-pagination .page-item.active .page-link {
+    background-color: #4e73df;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(78, 115, 223, 0.2);
+}
+
+.custom-pagination .page-item.disabled .page-link {
+    color: #adb5bd;
+    background-color: transparent;
+}
+
+.pagination-info {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #6c757d;
+    margin-top: 0.3rem;
+    display: inline-flex;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 2px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+} 
+ 
+ 
