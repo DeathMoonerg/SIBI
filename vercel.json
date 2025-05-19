@@ -31,6 +31,5 @@
         "DB_DATABASE": "sibis3_somehowwho",
         "DB_USERNAME": "sibis3_somehowwho",
         "DB_PASSWORD": "sibis3_somehowwho"
-    },
-    "buildCommand": "npm install && npm run build"
+    }
 }
