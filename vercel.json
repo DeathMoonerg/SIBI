@@ -1,16 +1,15 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "public/index.php",
-            "use": "vercel-php@0.7.0"
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.0",
+            "memory": 1024,
+            "maxDuration": 10
         }
-    ],
+    },
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "public/index.php"
-        }
+        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "env": {
         "APP_ENV": "production",
