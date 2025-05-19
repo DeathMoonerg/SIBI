@@ -2,11 +2,8 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/index.php",
-            "use": "@vercel/php@0.7.0",
-            "config": {
-                "runtime": "php@8.2"
-            }
+            "src": "Dockerfile",
+            "use": "@vercel/docker"
         }
     ],
     "routes": [
